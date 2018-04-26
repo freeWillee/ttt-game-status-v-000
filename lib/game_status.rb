@@ -87,4 +87,3 @@ def over?(board)
   else
     false
 end
-
