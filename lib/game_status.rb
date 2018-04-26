@@ -96,4 +96,6 @@ def winner(board)
     puts won?(board)[0]
   else
     nil
+  end
+  
 end
