@@ -51,9 +51,9 @@ def won?(board)
     # test to see if win_combo is on the 'board'
     if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X")
       # return the win_combo array if true
-      win_combo
+      return win_combo
     elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
-      win_combo
+      return win_combo
     else
       return false
     end
