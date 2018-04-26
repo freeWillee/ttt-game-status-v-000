@@ -58,3 +58,9 @@ def won?(board)
   # if there are no win_combinations, then return false and break out of the method
   return false
 end
+
+def full?(board)
+  #The #full? method should accept a board and return true if every element in the board contains either an "X" or an "O".
+  board.all? do |position|
+    position == "X" || position == "O"
+end
