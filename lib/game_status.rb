@@ -70,5 +70,10 @@ def draw?(board)
   #accepts a board and returns true if the board has not been won and is full
   # and false if the board is not won and the board is not full, and false if the board is won.
   # You should be able to compose this method solely using the methods you used above with some ruby logic.
-
-  
+  if !won?(board) && full?(board)
+    return true
+  elsif !won?(board) && !full?(board)
+    return false
+  elsif won?(board)
+    return false
+end
