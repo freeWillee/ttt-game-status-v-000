@@ -52,12 +52,13 @@ def won?(board)
     pos_3 = board[index_3]
 
     # test to see if win_combo is on the 'board'
-    if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X")
-      # return the win_combo array if true
-      return win_combo
-    elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+    if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || 
+      (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+      # return the win_combo array if true and break out of the loop and method
       return win_combo
     end
   end
+
+  # if there are no win_combinations, then return false and break out of the method
   return false
 end
