@@ -37,9 +37,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   #iterate though the constant, WIN_COMBINATIONS
-
-
-
   WIN_COMBINATIONS.each do |win_combo|
     #Define index position on 'board' to be tested;
     index_1 = win_combo[0]
