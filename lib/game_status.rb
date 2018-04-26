@@ -78,3 +78,13 @@ def draw?(board)
     return false
   end
 end
+
+def over?(board)
+  #Build a method #over? that accepts a board and returns true if the board has been won, is a draw, or is full. You should be able to compose this method solely using the methods you used above with some ruby logic.
+
+  if won?(board) || draw?(board) || full?(board)
+    return true
+  else
+    false
+end
+
