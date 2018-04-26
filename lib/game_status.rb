@@ -55,7 +55,7 @@ def won?(board)
     elsif (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
       win_combo
     else
-      false
+      return false
     end
   end
 end
